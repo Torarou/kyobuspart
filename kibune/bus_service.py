@@ -37,9 +37,9 @@ class BusService:
             lat = vehicle["lat"]
             lon = vehicle["lon"]
 
-            #if not (MIN_LAT <= lat <= MAX_LAT and
-            #        MIN_LON <= lon <= MAX_LON):
-            #    continue
+            if not (MIN_LAT <= lat <= MAX_LAT and
+                    MIN_LON <= lon <= MAX_LON):
+                continue
 
             if vehicle["schedule_relationship"] == "ADDED":
 
