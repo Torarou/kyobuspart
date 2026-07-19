@@ -1,0 +1,249 @@
+html,
+body{
+
+    margin:0;
+
+    width:100%;
+
+    height:100%;
+}
+
+#map{
+
+    width:100%;
+
+    height:100%;
+}
+
+.bus-label{
+
+    position: relative;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+}
+
+
+.bus-marker{
+
+    position:relative;
+
+    top:8px;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    border:2px solid white;
+
+    color:white;
+
+    font-size:8px;
+
+    font-weight:bold;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.bus-info{
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    z-index:1000;
+
+    display:inline-block;
+
+    background:rgba(255,255,255,0.6);
+
+    border-radius:10px;
+
+    padding:5px 8px;
+
+    box-shadow:0 0 4px rgba(0,0,0,0.25);
+
+    font-size:11px;
+
+    font-weight:semibold;
+
+    white-space:nowrap;
+
+}
+
+
+.bus-id{
+
+    line-height:12px;
+}
+
+.bus-icon{
+
+    position:relative;
+
+    width:30px;
+
+    height:42px;
+
+    margin:auto;
+}
+
+.bus-arrow{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:-8px;
+
+    bottom:26px;
+
+    width:0;
+
+    height:0;
+
+    border-left:7px solid transparent;
+
+    border-right:7px solid transparent;
+
+    border-bottom:12px solid;
+
+}
+
+
+
+.bus-body{
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform-origin:center center;
+}
+
+.bus-container{
+
+    position:relative;
+
+    width:140px;
+
+    height:80px;
+}
+
+.bus-rotation{
+
+    position:absolute;
+
+    left:50%;
+
+    top:55px;
+
+    transform-origin:center center;
+}
+
+#timestamp{
+
+    position:fixed;
+
+    right:15px;
+
+    bottom:15px;
+
+    z-index:10000;
+
+    background:rgba(255,255,255,0.8);
+
+    padding:6px 10px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.bus-header{
+
+    display:flex;
+
+    align-items:center;
+}
+
+.route-box{
+
+    background:#1E8E3E;
+
+    color:white;
+
+    padding:3px 10px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    border-radius:10px 0 0 10px;
+}
+
+.route-direct{
+
+    background:#E85D04;
+}
+
+.route-rapid{
+
+    background:#F4A100;
+}
+.route-ko{
+    background-color: transparent;
+    border: #ffffff 1px solid;
+}
+
+.destination-box{
+
+    padding:3px 10px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    border-radius:0 10px 10px 0;
+}
+
+.status-box{
+
+    margin-top:3px;
+
+    /*background:rgba(255,255,255,0.75);*/
+
+    border-radius:10px;
+
+    padding:3px 8px;
+
+    font-size:11px;
+
+    text-align:center;
+}
